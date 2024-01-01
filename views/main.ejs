@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <div class="container">
+        <header><div><span class="spacer"></span><h1>Blog</h1><span class="spacer"></span></div></header>
+        <a class="newPostBtn" href="/new">Yeni Yazı</a>
+        <ul id="postList">
+            <% posts.forEach(post => { %>
+                <li>
+                    <h2>
+                        <%= post.title %>
+                    </h2>
+                    <small>
+                        <%= post.date %>
+                    </small>
+                    <p>
+                        <%= post.content %>
+                    </p>
+                    <small>
+                        Yazar: <%= post.author %>
+                    </small>
+                    <a class="edit" href="/edit/<%= post.id %>">Düzenle</a>
+                    <a class="delete" href="/api/post/delete/<%= post.id %>">Sil</a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
