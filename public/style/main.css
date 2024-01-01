@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap');
+
+body, h1, h2, p, ul, li, form, input, textarea, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+body {
+    background-color: #f7f9fc;
+    line-height: 1.6;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+header {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+header div {
+    display: table-row;
+    line-height: 2em;
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    width: 1px;
+    padding: 0 10px;
+}
+
+header span.spacer {
+    display: table-cell;
+}
+
+header span.spacer:after {
+    display: inline-block;
+    width: 100%;
+    content: ".";
+    font-size: 0;
+    color: transparent;
+    height: 2px;
+    background: #000;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 20px 0;
+    color: #555;
+}
+
+p, input, textarea {
+    margin-bottom: 20px;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.3s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.delete, .edit, button {
+    display: inline-flex;
+    padding: 0.7rem 1rem;
+    border: 0.125rem solid rgb(25, 25, 34);
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    transition: background-color 0.2s ease 0s, color 0.2s ease 0s, border-color 0.2s ease 0s;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 0.25rem;
+    min-height: 1rem;
+    background-color: transparent;
+    color: rgb(25, 25, 34);
+}
+
+.delete:hover, .edit:hover, button:hover {
+    background-color: rgb(25, 25, 34);
+    border-color: rgb(25, 25, 34);
+    color: rgb(255, 255, 255);
+}
+
+.newPostBtn {
+    background-color: rgb(255, 233, 233); border-radius: 0.25rem;  color: rgb(55, 0, 0); font-weight: bold; outline: none; padding: 1rem; position: relative; text-decoration: none; transform-style: preserve-3d;
+}
+    
+.newPostBtn:hover {
+    color: rgb(55, 0, 0); transform: translate(0px, 0.25em); background-color: rgb(255, 233, 233);
+}
