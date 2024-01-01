@@ -1,5 +1,5 @@
 # Simple Blog Without MONGODB
-Basit bir blog oluşturulmuştur node.js ve axios kullanılarak
+Node.js ve axios kullanılarak basit bir blog sayfası oluşturulmuştur
 ## Projeyi Çalıştırmak İçin
 Paketleri yükleyin
 ```
