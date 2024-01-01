@@ -11,7 +11,8 @@ node server.js
 node node.js
 ```
 Yazarak iki terminal yardımıyla projeyi çalıştırabilirsiniz.
-Tarayıcıda
+
+Tarayıcıda,
 ```
 http://localhost:3000
 ```
